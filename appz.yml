@@ -22,7 +22,7 @@ monitor:
   notify: appzops@cloudbourne.co      
 
 properties:
-  revision : 35
+  revision : 36
   petstore_title : Hello Petstore Demo - 10152020
   SITE_URL: "https://petstore.appzprod.com"
   DB_URL: jdbc:mysql://mariadb-master-10-4:3306/petstore
