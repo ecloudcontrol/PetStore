@@ -16,7 +16,6 @@ deploy:
   replicas: 2
   port: 
    - 8080
-   - 80
   strategy : rolling
   ready_seconds : 30
 
@@ -24,7 +23,7 @@ monitor:
   notify: appzops@cloudbourne.co      
 
 properties:
-  revision : 36
+  revision : 37
   petstore_title : Hello Petstore Demo - StateStreet
   SITE_URL: "https://petstore.appzprod.com"
   DB_URL: jdbc:mysql://mariadb-master-10-4:3306/petstore
