@@ -16,7 +16,6 @@ deploy:
   replicas: 2
   port: 
    - 8080
-   - 80
   strategy : rolling
   ready_seconds : 30
 
