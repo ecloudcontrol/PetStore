@@ -13,10 +13,12 @@ build:
 
 deploy:
   context: alpha/DEV
-  replicas: 1
-  port:
-  - 8080
-  - 80
+  replicas: 2
+  port: 
+   - 8080
+   - 80
+  strategy : rolling
+  ready_seconds : 30
 
 monitor:
   notify: appzops@cloudbourne.co      
